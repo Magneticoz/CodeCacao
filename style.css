@@ -113,18 +113,18 @@
 /* Fonts */
 @font-face {
   font-family: 'Tungsten';
-  src: url("../fonts/Tungsten-Medium.otf") format("opentype");
+  src: url("fonts/Tungsten-Medium.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'Tungsten';
-  src: url("../fonts/Tungsten-Semibold.otf") format("opentype");
+  src: url("fonts/Tungsten-Semibold.otf") format("opentype");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: 'cacao';
-  src: url("../fonts/cacao.eot?jsujv8");
-  src: url("../fonts/cacao.eot?jsujv8#iefix") format("embedded-opentype"), url("../fonts/cacao.ttf?jsujv8") format("truetype"), url("../fonts/cacao.woff?jsujv8") format("woff"), url("../fonts/cacao.svg?jsujv8#cacao") format("svg");
+  src: url("fonts/cacao.eot?jsujv8");
+  src: url("fonts/cacao.eot?jsujv8#iefix") format("embedded-opentype"), url("fonts/cacao.ttf?jsujv8") format("truetype"), url("fonts/cacao.woff?jsujv8") format("woff"), url("fonts/cacao.svg?jsujv8#cacao") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
