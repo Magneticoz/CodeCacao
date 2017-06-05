@@ -1,6 +1,6 @@
 /* Match heights of news box - homepage */
 
-$(function() {
+jQuery(document).ready(function($) {
     $('.box').matchHeight();
 });
 

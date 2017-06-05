@@ -529,7 +529,9 @@ footer {
     footer .footer-soc li {
       display: inline-block;
       padding: 20px; }
-
+#content{
+	margin-top:36px;
+}
 @media (max-width: 992px) {
   .border-box:nth-last-child(1):nth-child(odd) .date {
     position: relative;

@@ -46,7 +46,7 @@ get_header(); ?>
 			</div>
 		</div><!-- /row -->
 		<div class="row text-center">
-			<a class="button" href="work.html">Discover more</a>
+			<a class="button" href="https://www.codecacao.com/work.html">Discover more</a>
 		</div>
 	</div>
 </section>
@@ -70,7 +70,7 @@ if($newsHeadline != "" && !empty($newsArticles)){
 			$newsColor = "";
 			$newsNum = 0;
 			foreach($newsArticles as $news){
-				$newsOut .= 	'<div class="col-sm-6 col-md-4 box border-box" style="height:307px;">';
+				$newsOut .= 	'<div class="col-sm-6 col-md-4 box border-box">';
 				if($news['homepage_simple_box'] === 1){
 					if($news['homepage_box_color'] != ""){
 						$newsColor .= '.news-box-content-'.$newsNum.' {color:'.$news['homepage_box_color'].'}';
