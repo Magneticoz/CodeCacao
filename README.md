@@ -21,3 +21,9 @@
 	-	Two fields are same for both displays: - News box text color and News box footer.
 	-	If text color for box is not set, default ( yellow ) will be used.
 	-	you can drag&drop added news to sort them differently.
+ 12. Adding Social menu
+	- Go to Dashboard -> Appearance -> Menus
+	- Add in menu name ( like "Social menu" ), and click on "Add menu".
+	- Add in custom links with url to social media and Link text "&nbsp;".
+	- Add in classes for social link with prefix "head_". So you have "head_facebook", "head_twitter", "head_linkedin", "head_email". If you can't add in class when you expand added item, then navigate to the top of the WP page, find "Screen options", expand it and be sure "CSS Classes" has it's checkbox ticked.
+	- under Display location, check Social Links Menu.

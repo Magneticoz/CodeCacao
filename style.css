@@ -44,6 +44,23 @@
       height: inherit;
       padding: 8px 17px;
       display: inline-block; }
+			.navbar.navbar-default .navbar-nav li a{
+				display: inline-block;
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+			.navbar.navbar-default .navbar-nav li.head_facebook a{
+				background-image: url('img/facebook.png');
+			}
+			.navbar.navbar-default .navbar-nav li.head_twitter a{
+				background-image: url('img/twitter.png');
+			}
+			.navbar.navbar-default .navbar-nav li.head_linkedin a{
+				background-image: url('img/linkedin.png');
+			}
+			.navbar.navbar-default .navbar-nav li.head_email a{
+				background-image: url('img/contact.png');
+			}
       .navbar.navbar-default .navbar-nav li a img {
         heigh: 20px; }
 

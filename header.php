@@ -33,8 +33,11 @@
 				$custom_logo_id = get_theme_mod( 'custom_logo' );
 				$image = wp_get_attachment_image_src( $custom_logo_id , 'full' )[0];
 			?>
-			<a class="navbar-brand" href="index.html"><img class="logo" src="<?php echo $image; ?>"></a>
+			<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo $image; ?>"></a>
 	</div>
+	<?php
+		wp_nav_menu(array('menu' => 'Social Links Menu', 'container' => 'ul', 'menu_class' => 'nav navbar-nav hidden-xs'));
+	?>
 	<!--ul class="nav navbar-nav hidden-xs">
 			<li><a href="https://www.facebook.com/Codecacao-1780399962277874/" target="_blank"><img src="images/facebook.png"></a></li>
 			<li><a href="https://twitter.com/Codecacao1" target="_blank"><img src="images/twitter.png"></a></li>
