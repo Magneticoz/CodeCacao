@@ -90,3 +90,18 @@ function create_posttypes() {
     )
   );
 }
+
+function cfs_homepage_options( $screens ) {
+    $screens[] = array(
+        'name'            => 'homepage-options',
+        'menu_title'      => __( 'Homepage Options' ),
+        'page_title'      => __( 'News' ),
+        'menu_position'   => 100,
+        'icon'            => 'dashicons-admin-generic', // optional, dashicons-admin-generic is the default
+        'field_groups'    => array( 'Homepage' ), // Field Group name(s) of CFS Field Group to use on this page (can also be post IDs)
+    );
+
+    return $screens;
+}
+
+add_filter( 'cfs_options_screens', 'cfs_homepage_options' );

@@ -203,7 +203,7 @@ p, .p {
 
 a {
   color: inherit; }
-  a:hover, a:focus, a:active {
+  a:hover, a:focus, a:active, .news-box-content a:hover, .news-box-content a:focus, .news-box-content a:active {
     color: #ffc600;
     text-decoration: inherit; }
 
@@ -229,7 +229,7 @@ a {
 .grey-medium {
   color: #707070; }
 
-.yellow {
+.yellow, .news-box-content, .news-box-link a {
   color: #eeb71d; }
 
 .red {

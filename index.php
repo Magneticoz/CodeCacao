@@ -51,4 +51,53 @@ get_header(); ?>
 	</div>
 </section>
 
+<?php
+$newsHeadline = cfs_get_option( 'homepage-options', 'homepage_news_title' );
+$newsArticles = cfs_get_option( 'homepage-options', 'homepage_news' );
+if($newsHeadline != "" && !empty($newsArticles)){
+?>
+	<section id="news" class="black-bg white">
+		<div class="spacer"></div>
+		<div class="container">
+			<div class="row">
+				<p class="heading-small yellow">news</p>
+				<h2><?php echo $newsHeadline; ?></h2>
+				<div class="spacer"></div>
+			</div>
+		</div>
+		<?php
+			$newsOut = "";
+			$newsColor = "";
+			$newsNum = 0;
+			foreach($newsArticles as $news){
+				$newsOut .= 	'<div class="col-sm-6 col-md-4 box border-box" style="height:307px;">';
+				if($news['homepage_simple_box'] === 1){
+					if($news['homepage_box_color'] != ""){
+						$newsColor .= '.news-box-content-'.$newsNum.' {color:'.$news['homepage_box_color'].'}';
+					}
+					$newsOut .= 	'	<p class="heading-small">'.$news['homepage_simple_box_header'].'</p>'."\n".
+												'	<p class="num-big news-box-content news-box-content-'.$newsNum.'">'.$news['homepage_simple_box_big'].'<span class="h3">'.$news['homepage_simple_box_small'].'</span></p>';
+				}else{
+					if($news['homepage_box_color'] != ""){
+						$newsColor .= '.news-box-content-'.$newsNum.' a{color:'.$news['homepage_box_color'].'}';
+					}
+					$newsOut .= 	'	<p class="medium news-box-link news-box-content-'.$newsNum.'">'.$news['homepage_detailed_box_content'].'</p>';
+				}
+				$newsOut .= 	'	<p class="date">'.$news['simple_box_footer'].'</p>'."\n".
+											'</div>';
+				$newsNum = $newsNum+1;
+			}																						 
+		?>
+		<div class="row news-grid-row">
+			<?php 
+				if($newsColor != ""){
+					echo '<style>'.$newsColor.'</style>';
+				}																	 
+				echo $newsOut; 
+			?>
+		</div>
+	</section>
+<?php
+}
+?>
 <?php get_footer(); ?>

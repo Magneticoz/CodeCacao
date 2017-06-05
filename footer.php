@@ -10,7 +10,7 @@
 ?>
 <footer class="black-bg">
     <div class="container">
-        <div class="col-sm-12 yellow text-uppercase text-center"><p>Read something more <a href="about.html">About Us</a>, Check reasons to <a href="join_us.html">Join Us</a><br>Review <a href="work.html">our Work</a>, or simply <a href="contact.html">Contact us</a></p></div>
+        <div class="col-sm-12 yellow text-uppercase text-center"><p>Read something more <a href="https://www.codecacao.com/about.html">About Us</a>, Check reasons to <a href="https://www.codecacao.com/join_us.html">Join Us</a><br>Review <a href="https://www.codecacao.com/work.html">our Work</a>, or simply <a href="https://www.codecacao.com/contact.html">Contact us</a></p></div>
         <div class="col-sm-12 white text-center"><ul class="footer-soc">
             <li><a href="https://www.facebook.com/Codecacao-1780399962277874/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/facebook.png"></a></li>
             <li><a href="https://twitter.com/Codecacao1" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/twitter.png"></a></li>
